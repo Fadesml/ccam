@@ -23,8 +23,9 @@ main_instance.container.bind_constant(UserRepository, UserRepository)
 
 main_instance.include_router(router)
 
-main_instance.run(
-    storage=MemoryStorage(),
-    on_startup=startup_wrapper(database, main_instance.bot),
-    on_shutdown=shutdown_wrapper(database)
-)
+if __name__ == '__main__':
+    main_instance.run(
+        storage=MemoryStorage(),
+        on_startup=startup_wrapper(database, main_instance.bot),
+        on_shutdown=shutdown_wrapper(database)
+    )

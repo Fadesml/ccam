@@ -4,6 +4,7 @@ config = Config(".env")
 
 DB_URL = config("DB_URL", cast=str)
 VK_API_TOKEN = config("VK_API_TOKEN", cast=str)
+GROUP_ID = config("GROUP_ID", cast=int)
 
 # Настройка точности нейронки
 SCALE_FACTOR = config("SCALE_FACTOR", cast=float)

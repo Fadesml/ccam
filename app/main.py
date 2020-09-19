@@ -12,10 +12,10 @@ sys.path.insert(0, os.path.split(dir_path)[0])
 from app.db.repositories import UserRepository
 from app.events import startup_wrapper, shutdown_wrapper
 from app.handlers import router
-from app.config import VK_API_TOKEN, DB_URL
+from app.config import VK_API_TOKEN, DB_URL, GROUP_ID
 
 logging.basicConfig(level=logging.INFO)
-main_instance = VkWaveMainRouter(VK_API_TOKEN)
+main_instance = VkWaveMainRouter(VK_API_TOKEN, GROUP_ID)
 database = Database(DB_URL)
 
 main_instance.container.bind_constant(Database, database)

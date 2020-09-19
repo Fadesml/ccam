@@ -4,21 +4,17 @@
 
 ## Установка
 ```bash
-python -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ## Перед запуском
 Вставить в .env или env vk_token, camera_id
 ```bash
-source venv/bin/activate
 alembic upgrade head
 ```
 
 ## Запуск
 ```bash
-source venv/bin/activate
 python app/main.py
 ```
 

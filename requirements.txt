@@ -6,3 +6,4 @@ vkwave==0.2.6
 alembic~=1.4.3
 psycopg2-binary~=2.8.6
 opencv-python~=4.4.0.42
+aiosqlite

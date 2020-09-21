@@ -1,38 +1,23 @@
 # ccam
 
-Для работы необходим python-3.7
-
 ## Установка
-```bash
-pip install -r requirements.txt
-```
-
-## Перед запуском
-Вставить в .env или env vk_token, camera_id
-```bash
-alembic upgrade head
-```
-
-## Запуск
-```bash
-python app/main.py
-```
+Для платформы linux / mac вам требуется распаковать папку build_linux, для Windows 7-10 папка build_win
+Если хотите посмотреть исходники source папка к вашим услугам :)
 
 ## Заполнение .env
 1) Получение VK_API_TOKEN:  
 Переходим в пункт Работа с API:
-![Работа с API](./readme_images/1_vk.png)  
+![Работа с API](./readme_images/1_vk.png) 
 Переходим в пункт Long Poll API и включаем все как на скрине:
 ![Long Poll API](./readme_images/2_vk.png)  
 Выбираем все пункты как на скрине:
-![Все пункты](./readme_images/3_vk.png)  
+![Все пункты](./readme_images/3_vk.png) 
 Во вкладке "Ключи доступа" нажимаем кнопку "создать ключ" и выбираем все пункты как на скрине:   
-![Long Poll API](./readme_images/4_vk.png)  
+![Long Poll API](./readme_images/4_vk.png) 
 
-## Camera id
-Получение все доступных id камер:
-```bash
-python cameras_id.py
-```
-Использование первой работающей камеры:  
-camera_id = -1
+
+## Запуск
+Запуск main
+
+## Использование бота
+В сообщениях группы вк написать команду "старт" и подписаться на рассылку. После чего вам будут отправлены фотографии в сообщения. Так же фотографии будут сохраняться в папку images рядом с файлом main.
